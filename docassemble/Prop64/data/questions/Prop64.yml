@@ -1,0 +1,794 @@
+code: multi_user = True
+mandatory: True
+---
+metadata:
+  short title: Proposition 64 with POS
+  title: Proposition 64 with POS
+---
+features:
+  css: >-
+    https://s3-us-west-1.amazonaws.com/hsldocassemble/assets/docassemble-ui-interview.css
+---
+modules:
+  - docassemble.base.util
+---
+continue button label: Save & Continue
+fields:
+  - '**Are you here to reclassify/resentence a California marijuana conviction under Prop. 64?**': wantsthishelp
+    datatype: yesnoradio
+mandatory: 'True'
+question: >-
+  Hi! We can help you reclassify or get resentencing of your marijuana conviction.
+subquestion: |
+  **Important**: This site should only be used by **U.S. citizens** who are certain they only have a Prop. 64 eligible conviction.  If you have **additional** non-Prop. 64 eligible convictions, or if you're not a U.S. citizen, you should speak to your Public Defender or local legal aid, as they can give you other services we don't yet provide and explain all immigration consequences. Click [here](https://helpselflegal.wordpress.com/2018/03/23/legal-aid-resources-for-criminal-records-public-defenders-and-legal-aid/) for a list of resources.
+  
+  _HelpSelf Legal is an online service that provides legal forms and legal information. We are not a law firm and are not a substitute for an attorney's advice. Use of this website is subject to our Terms of Service and Privacy Policy._
+---
+mandatory: | 
+  wantsthishelp == False
+question: |
+  ###I'm sorry.  We can only help you reclassify/resentence a marijuana conviction.
+
+  Your Public Defender or legal aid may be able to help you, tell you about other remedies, and explain immigration consequences (some explained [here](https://www.ilrc.org/sites/default/files/resources/marijuana_english.pdf)).  Below is a list of resources:
+
+    * Clean Slate Clinics (clinics that can help you in person with expungements and record clearing)
+        * [Root and Rebound](http://www.rootandrebound.org/events/2018/4/14/fresno-reentry-legal-services-day) (statewide)
+        * [One Justice](https://onejustice.org/calendar/) (statewide)
+        * [Lawyers Committee for Civil Rights](https://www.lccr.com/events/upcoming-events/) (San Francisco)
+        * [Legal Aid Foundation of Los Angeles](https://lafla.org/self-help/calendar/) (Los Angeles)
+        * [A New Way of Life](http://www.anewwayoflife.org/legal-clinics/) (Long Beach and Los Angeles)
+        * [NORML's Legal Directory](http://marijuanalistings.canorml.org/listing/find-medical-marijuana-lawyer-bail-bondsmen-accountant/)
+    * Public Defender's Offices
+        * Alameda - [Click Here](http://www.co.alameda.ca.us/defender/services/cleanslate.htm); Alpine - [Click Here](http://www.alpinecountyca.gov); Amador - [Click Here](http://www.amadorattorneys.com/)
+        * Butte - [Click Here](http://www.buttecounty.net); Calaveras - [Click Here](https://www.freelegalaid.com/nav/california/dui-and-criminal/resource/calaveras-county-public-defender); Contra Costa - [Click Here](http://co.contra-costa.ca.us/1555/Public-Defender)
+        * Del Norte - [Click Here](http://www.co.del-norte.ca.us); El Dorado - [Click Here](https://www.edcgov.us/Government/Public-Defender/documents/Publication2.pdf); Fresno - [Click Here](http://www.co.fresno.ca.us/departments/public-defender/how-to-clean-up-your-record)
+        * Glenn - [Click Here](http://www.glenncountygovmt.net); Humboldt - [Click Here](https://humboldtgov.org/1345/Public-Defender); Imperial - [Click Here](http://www.co.imperial.ca.us/PublicDefender/Default.htm)
+        * Inyo - [Click Here](http://www.inyocounty.us/PublicDefender/); Kern - [Click Here](http://www.co.kern.ca.us/depts/); Kings - [Click Here](http://www.countyofkings.com); Lake - [Click Here](http://www.co.lake.ca.us)
+        * Lassen - [Click Here](http://www.lassencounty.org/govt/dept/pub_def/PublicDefender.asp); Los Angeles - [Click Here](http://pd.co.la.ca.us/faqs_cleanslate.html); Madera - [Click Here](http://www.ciummolaw.org/#!contact/c24vq)
+        * Marin - [Click Here](https://www.marincounty.org/depts/pd/expungement-of-criminal-records); Mariposa - [Click Here](http://www.mariposacounty.org); Mendocino - [Click Here](http://www.co.mendocino.ca.us/ndx.htm)
+        * Merced - [Click Here](http://www.co.merced.ca.us/903/Expungements); Mono - [Click Here](http://www.monocounty.ca.gov/); Monterey - [Click Here](http://www.co.monterey.ca.us/government/departments-i-z/public-defender)
+        * Napa - [Click Here](http://www.countyofnapa.org/PublicDefender/); Nevada - [Click Here](http://www.mynevadacounty.com/html/public_defender.html); Orange - [Click Here](http://www.pubdef.ocgov.com/programs/new_leaf_program/default.htm)
+        * Placer - [Click Here](https://www.placer.ca.gov/departments/ceo/econdev/ban/clean%20slate); Plumas - [Click Here](http://www.countyofplumas.com); Riverside - [Click Here](http://publicdef.co.riverside.ca.us/opencms/relief.html)
+        * Sacramento - [Click Here](http://www.publicdefender.saccounty.net/Pages/ClearingaCriminalRecord.aspx); San Benito - [Click Here](http://www.san-benito.ca.us/departments/); San Bernardino - [Click Here](http://sbpubdef.com/FAQ.aspx?tag=ClearMyRecord)
+        * San Diego - [Click Here](https://www.sandiegocounty.gov/content/sdc/public_defender/prop_64_faq.html); San Francisco - [Click Here](http://sfpublicdefender.org/services/clean-slate/)
+        * San Joaquin - [Click Here](http://www.co.san-joaquin.ca.us/pubdefender/); San Luis Obispo - [Click Here](https://www.slocounty.ca.gov/Departments/Administrative-Office/Public-Defender-Services-(San-Luis-Obispo-Defender/Services/Public-Defender-Services-(for-individuals).aspx); San Mateo - [Click Here](https://www.smcba.org/News/NewsDetail.aspx?NewsId=3)
+        * Santa Barbara - [Click Here](https://www.countyofsb.org/defender/expungments.sbc); Santa Clara - [Click Here](https://www.sccgov.org/sites/pdo/Pages/pdo.aspx); Santa Cruz - [Click Here](http://www.scdefenders.com/cleanslate/) 
+        * Shasta - [Click Here](https://www.co.shasta.ca.us/index/pd_index/expungements.aspx); Sierra - [Click Here](http://www.sierracounty.ws); Siskiyou - [Click Here](http://www.co.siskiyou.ca.us/page/public-defenders-office)
+        * Solano - [Click Here](https://www.solanocounty.com/depts/pubdefender/expungements.asp); Sonoma - [Click Here](http://www.sonoma-county.org/pubdef/); Stanislaus - [Click Here](http://www.stancounty.com/publicdefender/expungements.shtm)
+        * Sutter - [Click Here](https://www.co.sutter.ca.us/doc/government/depts/pd/pd_home); Tehama - [Click Here](http://www.co.tehama.ca.us/); Trinity - [Click Here](http://www.trinitycounty.org)
+        * Tulare - [Click Here](http://tularecounty.ca.gov/publicdefender/); Tuolumne - [Click Here](http://www.tuolumnecounty.ca.gov/Index.aspx?NID=432); Ventura - [Click Here](http://www.pubdef.countyofventura.org/)
+        * Yolo - [Click Here](http://www.yolocounty.org/law-justice/public-defender/expungement-record-mitigation/expungement); Yuba - [Click Here](http://www.co.yuba.ca.us)
+---
+mandatory: | 
+  wantsthishelp == True
+continue button label: Save & Continue
+question: >-
+  ## Check out these resources, or click **Continue** to proceed.
+    Your Public Defender or legal aid may be able to help you, tell you about other remedies, and explain immigration consequences (some explained [here](https://www.ilrc.org/sites/default/files/resources/marijuana_english.pdf)).  Below is a list of resources:
+
+    * Clean Slate Clinics (clinics that can help you in person with expungements and record clearing)
+        * [Root and Rebound](http://www.rootandrebound.org/events/2018/4/14/fresno-reentry-legal-services-day) (statewide)
+        * [One Justice](https://onejustice.org/calendar/) (statewide)
+        * [Lawyers Committee for Civil Rights](https://www.lccr.com/events/upcoming-events/) (San Francisco)
+        * [Legal Aid Foundation of Los Angeles](https://lafla.org/self-help/calendar/) (Los Angeles)
+        * [A New Way of Life](http://www.anewwayoflife.org/legal-clinics/) (Long Beach and Los Angeles)
+        * [NORML's Legal Directory](http://marijuanalistings.canorml.org/listing/find-medical-marijuana-lawyer-bail-bondsmen-accountant/)
+    * Public Defender's Offices
+        * Alameda - [Click Here](http://www.co.alameda.ca.us/defender/services/cleanslate.htm); Alpine - [Click Here](http://www.alpinecountyca.gov); Amador - [Click Here](http://www.amadorattorneys.com/)
+        * Butte - [Click Here](http://www.buttecounty.net); Calaveras - [Click Here](https://www.freelegalaid.com/nav/california/dui-and-criminal/resource/calaveras-county-public-defender); Contra Costa - [Click Here](http://co.contra-costa.ca.us/1555/Public-Defender)
+        * Del Norte - [Click Here](http://www.co.del-norte.ca.us); El Dorado - [Click Here](https://www.edcgov.us/Government/Public-Defender/documents/Publication2.pdf); Fresno - [Click Here](http://www.co.fresno.ca.us/departments/public-defender/how-to-clean-up-your-record)
+        * Glenn - [Click Here](http://www.glenncountygovmt.net); Humboldt - [Click Here](https://humboldtgov.org/1345/Public-Defender); Imperial - [Click Here](http://www.co.imperial.ca.us/PublicDefender/Default.htm)
+        * Inyo - [Click Here](http://www.inyocounty.us/PublicDefender/); Kern - [Click Here](http://www.co.kern.ca.us/depts/); Kings - [Click Here](http://www.countyofkings.com); Lake - [Click Here](http://www.co.lake.ca.us)
+        * Lassen - [Click Here](http://www.lassencounty.org/govt/dept/pub_def/PublicDefender.asp); Los Angeles - [Click Here](http://pd.co.la.ca.us/faqs_cleanslate.html); Madera - [Click Here](http://www.ciummolaw.org/#!contact/c24vq)
+        * Marin - [Click Here](https://www.marincounty.org/depts/pd/expungement-of-criminal-records); Mariposa - [Click Here](http://www.mariposacounty.org); Mendocino - [Click Here](http://www.co.mendocino.ca.us/ndx.htm)
+        * Merced - [Click Here](http://www.co.merced.ca.us/903/Expungements); Mono - [Click Here](http://www.monocounty.ca.gov/); Monterey - [Click Here](http://www.co.monterey.ca.us/government/departments-i-z/public-defender)
+        * Napa - [Click Here](http://www.countyofnapa.org/PublicDefender/); Nevada - [Click Here](http://www.mynevadacounty.com/html/public_defender.html); Orange - [Click Here](http://www.pubdef.ocgov.com/programs/new_leaf_program/default.htm)
+        * Placer - [Click Here](https://www.placer.ca.gov/departments/ceo/econdev/ban/clean%20slate); Plumas - [Click Here](http://www.countyofplumas.com); Riverside - [Click Here](http://publicdef.co.riverside.ca.us/opencms/relief.html)
+        * Sacramento - [Click Here](http://www.publicdefender.saccounty.net/Pages/ClearingaCriminalRecord.aspx); San Benito - [Click Here](http://www.san-benito.ca.us/departments/); San Bernardino - [Click Here](http://sbpubdef.com/FAQ.aspx?tag=ClearMyRecord)
+        * San Diego - [Click Here](https://www.sandiegocounty.gov/content/sdc/public_defender/prop_64_faq.html); San Diego - [Click Here](http://www.sdcounty.ca.gov/apd/); San Francisco - [Click Here](http://sfpublicdefender.org/services/clean-slate/)
+        * San Joaquin - [Click Here](http://www.co.san-joaquin.ca.us/pubdefender/); San Luis Obispo - [Click Here](https://www.slocounty.ca.gov/Departments/Administrative-Office/Public-Defender-Services-(San-Luis-Obispo-Defender/Services/Public-Defender-Services-(for-individuals).aspx); San Mateo - [Click Here](https://www.smcba.org/News/NewsDetail.aspx?NewsId=3)
+        * Santa Barbara - [Click Here](https://www.countyofsb.org/defender/expungments.sbc); Santa Clara - [Click Here](https://www.sccgov.org/sites/pdo/Pages/pdo.aspx); Santa Cruz - [Click Here](http://www.scdefenders.com/cleanslate/) 
+        * Shasta - [Click Here](https://www.co.shasta.ca.us/index/pd_index/expungements.aspx); Sierra - [Click Here](http://www.sierracounty.ws); Siskiyou - [Click Here](http://www.co.siskiyou.ca.us/page/public-defenders-office)
+        * Solano - [Click Here](https://www.solanocounty.com/depts/pubdefender/expungements.asp); Sonoma - [Click Here](http://www.sonoma-county.org/pubdef/); Stanislaus - [Click Here](http://www.stancounty.com/publicdefender/expungements.shtm)
+        * Sutter - [Click Here](https://www.co.sutter.ca.us/doc/government/depts/pd/pd_home); Tehama - [Click Here](http://www.co.tehama.ca.us/); Trinity - [Click Here](http://www.trinitycounty.org)
+        * Tulare - [Click Here](http://tularecounty.ca.gov/publicdefender/); Tuolumne - [Click Here](http://www.tuolumnecounty.ca.gov/Index.aspx?NID=432); Ventura - [Click Here](http://www.pubdef.countyofventura.org/)
+        * Yolo - [Click Here](http://www.yolocounty.org/law-justice/public-defender/expungement-record-mitigation/expungement); Yuba - [Click Here](http://www.co.yuba.ca.us)
+field: knowspdcanhelp
+---
+need: knowspdcanhelp
+continue button label: Save & Continue
+fields:
+  - choices:
+      - Under 18: Under_18
+      - 18-20: '18_20'
+      - 21 or over: 21_or_over
+    datatype: radio
+    Age: ageatconviction
+question: How old were you when you were **convicted**?
+---
+mandatory: | 
+  ageatconviction == 'Under_18'
+question: |
+    I’m sorry. We only help with adult convictions right now, but please check back soon for updates about juvenile convictions.  
+subquestion: |
+    Please contact one of the organizations below for more information on resources:
+    
+    * [Click Here](http://www.pjdc.org/community-resources/defender-offices/) for general contact information for juvenile defenders
+    * Clean Slate Clinics
+        * [Root and Rebound](http://www.rootandrebound.org/events/2018/4/14/fresno-reentry-legal-services-day) (statewide)
+        * [One Justice](https://onejustice.org/calendar/) (statewide)
+        * [Lawyers Committee for Civil Rights](https://www.lccr.com/events/upcoming-events/) (San Francisco)
+        * [Legal Aid Foundation of Los Angeles](https://lafla.org/self-help/calendar/) (Los Angeles)
+        * [A New Way of Life](http://www.anewwayoflife.org/legal-clinics/) (Long Beach and Los Angeles)
+        * [NORML's Legal Directory](http://marijuanalistings.canorml.org/listing/find-medical-marijuana-lawyer-bail-bondsmen-accountant/)
+    * Public Defender's Offices
+        * Alameda - [Click Here](http://www.co.alameda.ca.us/defender/services/cleanslate.htm); Alpine - [Click Here](http://www.alpinecountyca.gov); Amador - [Click Here](http://www.amadorattorneys.com/)
+        * Butte - [Click Here](http://www.buttecounty.net); Calaveras - [Click Here](https://www.freelegalaid.com/nav/california/dui-and-criminal/resource/calaveras-county-public-defender); Contra Costa - [Click Here](http://co.contra-costa.ca.us/1555/Public-Defender)
+        * Del Norte - [Click Here](http://www.co.del-norte.ca.us); El Dorado - [Click Here](https://www.edcgov.us/Government/Public-Defender/documents/Publication2.pdf); Fresno - [Click Here](http://www.co.fresno.ca.us/departments/public-defender/how-to-clean-up-your-record)
+        * Glenn - [Click Here](http://www.glenncountygovmt.net); Humboldt - [Click Here](https://humboldtgov.org/1345/Public-Defender); Imperial - [Click Here](http://www.co.imperial.ca.us/PublicDefender/Default.htm)
+        * Inyo - [Click Here](http://www.inyocounty.us/PublicDefender/); Kern - [Click Here](http://www.co.kern.ca.us/depts/); Kings - [Click Here](http://www.countyofkings.com); Lake - [Click Here](http://www.co.lake.ca.us)
+        * Lassen - [Click Here](http://www.lassencounty.org/govt/dept/pub_def/PublicDefender.asp); Los Angeles - [Click Here](http://pd.co.la.ca.us/faqs_cleanslate.html); Madera - [Click Here](http://www.ciummolaw.org/#!contact/c24vq)
+        * Marin - [Click Here](https://www.marincounty.org/depts/pd/expungement-of-criminal-records); Mariposa - [Click Here](http://www.mariposacounty.org); Mendocino - [Click Here](http://www.co.mendocino.ca.us/ndx.htm)
+        * Merced - [Click Here](http://www.co.merced.ca.us/903/Expungements); Mono - [Click Here](http://www.monocounty.ca.gov/); Monterey - [Click Here](http://www.co.monterey.ca.us/government/departments-i-z/public-defender)
+        * Napa - [Click Here](http://www.countyofnapa.org/PublicDefender/); Nevada - [Click Here](http://www.mynevadacounty.com/html/public_defender.html); Orange - [Click Here](http://www.pubdef.ocgov.com/programs/new_leaf_program/default.htm)
+        * Placer - [Click Here](https://www.placer.ca.gov/departments/ceo/econdev/ban/clean%20slate); Plumas - [Click Here](http://www.countyofplumas.com); Riverside - [Click Here](http://publicdef.co.riverside.ca.us/opencms/relief.html)
+        * Sacramento - [Click Here](http://www.publicdefender.saccounty.net/Pages/ClearingaCriminalRecord.aspx); San Benito - [Click Here](http://www.san-benito.ca.us/departments/); San Bernardino - [Click Here](http://sbpubdef.com/FAQ.aspx?tag=ClearMyRecord)
+        * San Diego - [Click Here](https://www.sandiegocounty.gov/content/sdc/public_defender/prop_64_faq.html); San Francisco - [Click Here](http://sfpublicdefender.org/services/clean-slate/)
+        * San Joaquin - [Click Here](http://www.co.san-joaquin.ca.us/pubdefender/); San Luis Obispo - [Click Here](https://www.slocounty.ca.gov/Departments/Administrative-Office/Public-Defender-Services-(San-Luis-Obispo-Defender/Services/Public-Defender-Services-(for-individuals).aspx); San Mateo - [Click Here](https://www.smcba.org/News/NewsDetail.aspx?NewsId=3)
+        * Santa Barbara - [Click Here](https://www.countyofsb.org/defender/expungments.sbc); Santa Clara - [Click Here](https://www.sccgov.org/sites/pdo/Pages/pdo.aspx); Santa Cruz - [Click Here](http://www.scdefenders.com/cleanslate/) 
+        * Shasta - [Click Here](https://www.co.shasta.ca.us/index/pd_index/expungements.aspx); Sierra - [Click Here](http://www.sierracounty.ws); Siskiyou - [Click Here](http://www.co.siskiyou.ca.us/page/public-defenders-office)
+        * Solano - [Click Here](https://www.solanocounty.com/depts/pubdefender/expungements.asp); Sonoma - [Click Here](http://www.sonoma-county.org/pubdef/); Stanislaus - [Click Here](http://www.stancounty.com/publicdefender/expungements.shtm)
+        * Sutter - [Click Here](https://www.co.sutter.ca.us/doc/government/depts/pd/pd_home); Tehama - [Click Here](http://www.co.tehama.ca.us/); Trinity - [Click Here](http://www.trinitycounty.org)
+        * Tulare - [Click Here](http://tularecounty.ca.gov/publicdefender/); Tuolumne - [Click Here](http://www.tuolumnecounty.ca.gov/Index.aspx?NID=432); Ventura - [Click Here](http://www.pubdef.countyofventura.org/)
+        * Yolo - [Click Here](http://www.yolocounty.org/law-justice/public-defender/expungement-record-mitigation/expungement); Yuba - [Click Here](http://www.co.yuba.ca.us)
+---
+continue button label: Save & Continue
+question: >-
+  You will need your **case number** and details about your conviction to proceed.  
+subquestion: |
+  ###You can get these from:
+  
+    1. **Your documents** that you have saved from your original case(s), or
+    2. **Court Records** in the [county](http://www.courts.ca.gov/find-my-court.htm?query=) where you were convicted (call the court, or some county courts have online records), or
+    3. **Lawyer** or public defender in your case, or
+    4. **RAP Sheet**: Through a fingerprint LiveScan request at a [location in your county at this link](https://www.oag.ca.gov/fingerprints/locations). You will need to submit [this Request for Live Scan Service](http://nebula.wsimg.com/fde1df69bd2c2fd08185efd95f2ae1ac?AccessKeyId=998D9A7AD9360F70BB83&disposition=0&alloworigin=1) and [this Fee waiver](http://nebula.wsimg.com/c7d03fdc83773748d63d537842015111?AccessKeyId=998D9A7AD9360F70BB83&disposition=0&alloworigin=1) (if applicable).  This is the best method if you have convictions in more than one city or county.
+  
+  Watch this video starting at 3:26 to see how to get your DOJ Rap Sheet. Then, click Continue when you're ready.
+  [YOUTUBE -AfT4o5pbSY]
+mandatory: True
+field: sawvideo
+need: ageatconviction
+---
+need: sawvideo
+continue button label: Save & Continue
+fields:
+  - choices:
+      - Possession of marijuana (Health and Safety Code 11357): Possession_of_marijuana__Health_and_Safety_Code_11357_
+      - Cultivation of marijuana (11358): Cultivation_of_marijuana__11358_
+      - Possession of marijuana for sale (11359): Possession_of_marijuana_for_sale__11359_
+      - 'Transportation, Distribution, or Importation of Marijuana (11360)': Transportation__Distribution__or_Importation_of_Marijuana__11360_
+      - Personal use of marijuana (11362.1): Personal_use_of_marijuana__11362_1_
+    datatype: checkboxes
+    Conviction: convictiontype
+    none of the above: false
+question: What were you convicted of? (select all that apply)
+subquestion: |
+  If you have convictions in more than one county, you will need to complete this interview process separately for **each county**.
+---
+need: convictiontype
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    Case Number: convictioncasenumber
+question: |
+  ###What is your **case conviction number**?
+  
+  (!) If you have convictions in **more than one county**, you will need to complete this interview process separately for each county.
+---
+need: convictioncasenumber
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    Name: fulllegalname
+question: What is your full legal **name**?
+---
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    Address: streetaddress
+question: What is your mailing **address**?
+---
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    City: city
+question: What **city** is that in?
+---
+continue button label: Save & Continue
+fields:
+  - code: states_list()
+    State: state
+question: What **state** is that in?
+---
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    Zip Code: zipcode
+question: What is your **zip code**?
+---
+continue button label: Save & Continue
+fields:
+  - datatype: text
+    Telephone Number: telephonenumber
+question: What is your **phone** number?
+---
+continue button label: Save & Continue
+fields:
+  - datatype: email
+    Email Address: emailaddress
+question: What is your **email** address?
+---
+code: |
+  completedsentence = ''
+  currentlyserving_pre = ''
+field: currentlyserving_pre
+need:
+  - emailaddress
+---
+continue button label: Save & Continue
+fields:
+  - 'Are you **currently** serving any part of your sentence, probation, or parole?': currentlyserving
+    datatype: yesnoradio
+  - 'Have you **completed** the entire sentence for your conviction, including all probation or parole?': completedsentence
+    datatype: yesnoradio
+    show if:
+      is: False
+      variable: currentlyserving
+question: Sentence Completion ${ completedsentence }
+need:
+  - currentlyserving_pre
+---
+continue button label: Save & Continue
+fields:
+  - choices:
+      - 'Alameda Superior Court, Fremont Hall of Justice, 39439 Paseo Padre Parkway, Fremont, California 94538': >-
+          Alameda Superior Court, Fremont Hall of Justice, 39439 Paseo Padre
+          Parkway, Fremont, California 94538
+      - 'Alameda Superior Court, René C. Davidson Courthouse, 1225 Fallon Street, Oakland, California 94612': >-
+          Alameda Superior Court, René C. Davidson Courthouse, 1225 Fallon
+          Street, Oakland, California 94612
+      - 'Alameda Superior Court, East County Hall of Justice, 5151 Gleason Drive, Dublin, California 94568': >-
+          Alameda Superior Court, East County Hall of Justice, 5151 Gleason
+          Drive, Dublin, California 94568
+      - "Alameda Superior Court\t, Wiley W. Manuel Courthouse, 661 Washington Street, Oakland, California 94607": "Alameda Superior Court\t, Wiley W. Manuel Courthouse, 661 Washington Street, Oakland, California 94607"
+      - 'Amador Superior Court, 500 Argonaut Lane, Jackson, CA 95642': 'Amador Superior Court, 500 Argonaut Lane, Jackson, CA 95642'
+      - 'Butte Superior Court, One Court Street, Oroville CA 95965-3303': 'Butte Superior Court, One Court Street, Oroville CA 95965-3303'
+      - 'Calaveras Superior Court, 400 Government Center Drive, San Andreas, CA 95249-9794': >-
+          Calaveras Superior Court, 400 Government Center Drive, San Andreas, CA
+          95249-9794
+      - 'Colusa Superior Court, 532 Oak Street, Colusa, CA 95932': 'Colusa Superior Court, 532 Oak Street, Colusa, CA 95932'
+      - 'Contra Costa Superior Court, Wakefield Taylor Courthouse, 725 Court Street, Martinez, CA 94553': >-
+          Contra Costa Superior Court, Wakefield Taylor Courthouse, 725 Court
+          Street, Martinez, CA 94553
+      - 'Contra Costa Superior Court, A. F. Bray Courthouse, 1020 Ward Street, Martinez, CA 94553': >-
+          Contra Costa Superior Court, A. F. Bray Courthouse, 1020 Ward Street,
+          Martinez, CA 94553
+      - 'Contra Costa Superior Court, Richmond Superior Court, George D. Carroll Courthouse, 100 – 37th Street, Richmond, CA   94805': >-
+          Contra Costa Superior Court, Richmond Superior Court, George D.
+          Carroll Courthouse, 100 – 37th Street, Richmond, CA   94805
+      - 'Contra Costa Superior Court, Pittsburg Superior Court, Richard E. Arnason Justice Center, 1000 Center Drive, Pittsburg, CA 94565': >-
+          Contra Costa Superior Court, Pittsburg Superior Court, Richard E.
+          Arnason Justice Center, 1000 Center Drive, Pittsburg, CA 94565
+      - 'Del Norte Superior Court, Del Norte County Courthouse, 450 H Street, Room 209, Crescent City, CA 95531': >-
+          Del Norte Superior Court, Del Norte County Courthouse, 450 H Street,
+          Room 209, Crescent City, CA 95531
+      - 'El Dorado Superior Court, Placerville Building C Branch, 2850 Fairlane Court, Suite 120, Placerville, CA 95667': >-
+          El Dorado Superior Court, Placerville Building C Branch, 2850 Fairlane
+          Court, Suite 120, Placerville, CA 95667
+      - 'El Dorado Superior Court, Placerville Main Street Branch, 495 Main Street, Placerville, CA 95667': >-
+          El Dorado Superior Court, Placerville Main Street Branch, 495 Main
+          Street, Placerville, CA 95667
+      - 'El Dorado Superior Court, South Lake Tahoe Branch, 1354 Johnson Blvd., South Lake Tahoe, CA 96150': >-
+          El Dorado Superior Court, South Lake Tahoe Branch, 1354 Johnson Blvd.,
+          South Lake Tahoe, CA 96150
+      - 'Fresno Superior Court, 1100 Van Ness Avenue, Fourth Floor, Fresno, CA 93724-0002': >-
+          Fresno Superior Court, 1100 Van Ness Avenue, Fourth Floor, Fresno, CA
+          93724-0002
+      - 'Glenn Superior Court, Willows Branch - Main Courthouse, 526 West Sycamore Street, Willows, CA 95988': >-
+          Glenn Superior Court, Willows Branch - Main Courthouse, 526 West
+          Sycamore Street, Willows, CA 95988
+      - 'Glenn Superior Court, Orland Branch, 821 E. South Street, Orland, CA 95963': >-
+          Glenn Superior Court, Orland Branch, 821 E. South Street, Orland, CA
+          95963
+      - 'Humboldt Superior Court, 421 I Street, Eureka, CA 95501': 'Humboldt Superior Court, 421 I Street, Eureka, CA 95501'
+      - 'Humboldt Superior Court, Humboldt Superior Court 825 5th Street, Eureka, CA 95501': >-
+          Humboldt Superior Court, Humboldt Superior Court 825 5th Street,
+          Eureka, CA 95501
+      - 'Imperial Superior Court, Valley Plaza Infractions Court, 1625 Main Street, El Centro, CA 92243': >-
+          Imperial Superior Court, Valley Plaza Infractions Court, 1625 Main
+          Street, El Centro, CA 92243
+      - 'Inyo Superior Court, Independence, 168 North Edwards, Independence, CA 93526': >-
+          Inyo Superior Court, Independence, 168 North Edwards, Independence, CA
+          93526
+      - 'Inyo Superior Court, Bishop, 301 West Line St., Bishop, CA 93514': 'Inyo Superior Court, Bishop, 301 West Line St., Bishop, CA 93514'
+      - 'Kern Superior Court, Metro Division, 1415 Truxtun Ave, Bakersfield, CA 93301 ': >-
+          Kern Superior Court, Metro Division, 1415 Truxtun Ave, Bakersfield, CA
+          93301 
+      - 'Kern Superior Court, Metro Justice Building, 1215 Truxtun Ave, Bakersfield, CA 93301': >-
+          Kern Superior Court, Metro Justice Building, 1215 Truxtun Ave,
+          Bakersfield, CA 93301
+      - 'Kern Superior Court, Ridgecrest Branch, 132 East Coso Ave, Ridgecrest, CA 93555 ': >-
+          Kern Superior Court, Ridgecrest Branch, 132 East Coso Ave, Ridgecrest,
+          CA 93555 
+      - 'Kings Superior Court, 1640 Kings County Drive, Hanford, CA 93230': 'Kings Superior Court, 1640 Kings County Drive, Hanford, CA 93230'
+      - 'Lake Superior Court, Superior Court of California, County of Lake, 255 N. Forbes Street, 4th Floor, Lakeport, CA 95453': >-
+          Lake Superior Court, Superior Court of California, County of Lake, 255
+          N. Forbes Street, 4th Floor, Lakeport, CA 95453
+      - 'Lassen Superior Court, Hall of Justice, 2610 Riverside Drive, Susanville, CA 96130': >-
+          Lassen Superior Court, Hall of Justice, 2610 Riverside Drive,
+          Susanville, CA 96130
+      - 'Los Angeles Superior Court, Airport Courthouse, 11701 S. La Cienega, Los Angeles, CA 90045': >-
+          Los Angeles Superior Court, Airport Courthouse, 11701 S. La Cienega,
+          Los Angeles, CA 90045
+      - 'Los Angeles Superior Court, Alhambra Courthouse, 150 West Commonwealth, Alhambra, CA 91801': >-
+          Los Angeles Superior Court, Alhambra Courthouse, 150 West
+          Commonwealth, Alhambra, CA 91801
+      - 'Los Angeles Superior Court, Bellflower Courthouse, 10025 East Flower Street, Bellflower, CA 90706': >-
+          Los Angeles Superior Court, Bellflower Courthouse, 10025 East Flower
+          Street, Bellflower, CA 90706
+      - 'Los Angeles Superior Court, Burbank Courthouse, 300 East Olive, Burbank, CA 91502': >-
+          Los Angeles Superior Court, Burbank Courthouse, 300 East Olive,
+          Burbank, CA 91502
+      - 'Los Angeles Superior Court, Catalina Courthouse, 215 Sumner Avenue, Avalon, CA 90704': >-
+          Los Angeles Superior Court, Catalina Courthouse, 215 Sumner Avenue,
+          Avalon, CA 90704
+      - 'Los Angeles Superior Court, Central Arraignment Courthouse, 429 Bauchet St., Los Angeles, CA 90012': >-
+          Los Angeles Superior Court, Central Arraignment Courthouse, 429
+          Bauchet St., Los Angeles, CA 90012
+      - 'Los Angeles Superior Court, Clara Shortridge Foltz Criminal Justice Center, 210 West Temple Street, Los Angeles, CA 90012': >-
+          Los Angeles Superior Court, Clara Shortridge Foltz Criminal Justice
+          Center, 210 West Temple Street, Los Angeles, CA 90012
+      - 'Los Angeles Superior Court, Compton Courthouse, 200 West Compton Blvd., Compton, CA 90220': >-
+          Los Angeles Superior Court, Compton Courthouse, 200 West Compton
+          Blvd., Compton, CA 90220
+      - 'Los Angeles Superior Court, Downey Courthouse, 7500 East Imperial Highway, Downey, CA 90242': >-
+          Los Angeles Superior Court, Downey Courthouse, 7500 East Imperial
+          Highway, Downey, CA 90242
+      - 'Los Angeles Superior Court, East Los Angeles Courthouse, 4848 E. Civic Center Way, Los Angeles, CA 90022': >-
+          Los Angeles Superior Court, East Los Angeles Courthouse, 4848 E. Civic
+          Center Way, Los Angeles, CA 90022
+      - 'Los Angeles Superior Court, El Monte Courthouse, 11234 East Valley Blvd., El Monte, CA 91731': >-
+          Los Angeles Superior Court, El Monte Courthouse, 11234 East Valley
+          Blvd., El Monte, CA 91731
+      - 'Los Angeles Superior Court, Glendale Courthouse, 600 East Broadway, Glendale, CA 91206': >-
+          Los Angeles Superior Court, Glendale Courthouse, 600 East Broadway,
+          Glendale, CA 91206
+      - 'Los Angeles Superior Court, Governor George Deukmejian Courthouse, 275 Magnolia, Long Beach, CA 90802': >-
+          Los Angeles Superior Court, Governor George Deukmejian Courthouse, 275
+          Magnolia, Long Beach, CA 90802
+      - 'Los Angeles Superior Court, Inglewood Courthouse, One Regent Street, Inglewood, CA 90301': >-
+          Los Angeles Superior Court, Inglewood Courthouse, One Regent Street,
+          Inglewood, CA 90301
+      - 'Los Angeles Superior Court, Metropolitan Courthouse, 1945 South Hill Street, Los Angeles, CA 90007': >-
+          Los Angeles Superior Court, Metropolitan Courthouse, 1945 South Hill
+          Street, Los Angeles, CA 90007
+      - 'Los Angeles Superior Court, Michael Antonovich Antelope Valley Courthouse, 42011 4th Street West, Lancaster, CA 93534': >-
+          Los Angeles Superior Court, Michael Antonovich Antelope Valley
+          Courthouse, 42011 4th Street West, Lancaster, CA 93534
+      - 'Los Angeles Superior Court, Norwalk Courthouse, 12720 Norwalk Blvd., Norwalk, CA 90650': >-
+          Los Angeles Superior Court, Norwalk Courthouse, 12720 Norwalk Blvd.,
+          Norwalk, CA 90650
+      - 'Los Angeles Superior Court, Pasadena Courthouse, 300 East Walnut St., Pasadena, CA 91101': >-
+          Los Angeles Superior Court, Pasadena Courthouse, 300 East Walnut St.,
+          Pasadena, CA 91101
+      - 'Los Angeles Superior Court, Pomona Courthouse South, 400 Civic Center Plaza, Pomona, CA 91766': >-
+          Los Angeles Superior Court, Pomona Courthouse South, 400 Civic Center
+          Plaza, Pomona, CA 91766
+      - 'Los Angeles Superior Court, San Fernando Courthouse, 900 Third Street, San Fernando, CA 91340': >-
+          Los Angeles Superior Court, San Fernando Courthouse, 900 Third Street,
+          San Fernando, CA 91340
+      - 'Los Angeles Superior Court, Santa Clarita Courthouse, 23747 West Valencia Blvd., Santa Clarita, CA 91355': >-
+          Los Angeles Superior Court, Santa Clarita Courthouse, 23747 West
+          Valencia Blvd., Santa Clarita, CA 91355
+      - 'Los Angeles Superior Court, Torrance Courthouse, 825 Maple Ave., Torrance, CA 90503': >-
+          Los Angeles Superior Court, Torrance Courthouse, 825 Maple Ave.,
+          Torrance, CA 90503
+      - 'Los Angeles Superior Court, Van Nuys Courthouse West, 14400 Erwin Street Mall, Van Nuys, CA 91401': >-
+          Los Angeles Superior Court, Van Nuys Courthouse West, 14400 Erwin
+          Street Mall, Van Nuys, CA 91401
+      - 'Los Angeles Superior Court, West Covina Courthouse, 1427 West Covina Parkway, West Covina, CA 91790': >-
+          Los Angeles Superior Court, West Covina Courthouse, 1427 West Covina
+          Parkway, West Covina, CA 91790
+      - 'Madera Superior Court, Main Courthouse – Madera, 200 South G Street, Madera, CA 93637': >-
+          Madera Superior Court, Main Courthouse – Madera, 200 South G Street,
+          Madera, CA 93637
+      - 'Madera Superior Court, Sierra Division, 40601 Road 274, Bass Lake, CA 93604': >-
+          Madera Superior Court, Sierra Division, 40601 Road 274, Bass Lake, CA
+          93604
+      - 'Marin Superior Court, Hall of Justice, 3501 Civic Center Dr, , San Rafael, CA 94913-4988': >-
+          Marin Superior Court, Hall of Justice, 3501 Civic Center Dr, , San
+          Rafael, CA 94913-4988
+      - 'Mariposa Superior Court, 5088 Bullion St, Mariposa, CA 95338': 'Mariposa Superior Court, 5088 Bullion St, Mariposa, CA 95338'
+      - 'Mendocino Superior Court, 100 North State Street, Ukiah, CA 95482-4416': 'Mendocino Superior Court, 100 North State Street, Ukiah, CA 95482-4416'
+      - 'Mendocino Superior Court, 700 South Franklin Street, Fort Bragg, CA 95437-5464': >-
+          Mendocino Superior Court, 700 South Franklin Street, Fort Bragg, CA
+          95437-5464
+      - 'Merced Superior Court, 2260 N Street, Merced, CA 95340': 'Merced Superior Court, 2260 N Street, Merced, CA 95340'
+      - 'Modoc Superior Court, 205 South East Street, Alturas, CA 96101': 'Modoc Superior Court, 205 South East Street, Alturas, CA 96101'
+      - 'Mono Superior Court, Mammoth Lakes, 100 Thompsons Way, P.O. Box 1037, Mammoth Lakes, CA 93546': >-
+          Mono Superior Court, Mammoth Lakes, 100 Thompsons Way, P.O. Box 1037,
+          Mammoth Lakes, CA 93546
+      - 'Mono Superior Court, Bridgeport, 278 Main Street, P.O. Box 537, Bridgeport, CA 93517': >-
+          Mono Superior Court, Bridgeport, 278 Main Street, P.O. Box 537,
+          Bridgeport, CA 93517
+      - 'Monterey Superior Court, 240 Church Street, Salinas, CA 93901': 'Monterey Superior Court, 240 Church Street, Salinas, CA 93901'
+      - 'Monterey Superior Court, 118 W. Gabilan Street, Salinas, CA 93901': 'Monterey Superior Court, 118 W. Gabilan Street, Salinas, CA 93901'
+      - 'Napa Superior Court, 1111 Third Street, Napa, CA 94559': 'Napa Superior Court, 1111 Third Street, Napa, CA 94559'
+      - 'Nevada Superior Court, Nevada City Courthouse, 201 Church Street, Nevada City, CA 95959': >-
+          Nevada Superior Court, Nevada City Courthouse, 201 Church Street,
+          Nevada City, CA 95959
+      - 'Nevada Superior Court, Truckee courthouse, 10075 Levon Avenue, Truckee, CA  96161': >-
+          Nevada Superior Court, Truckee courthouse, 10075 Levon Avenue,
+          Truckee, CA  96161
+      - 'Orange Superior Court, Central Justice Center, 700 Civic Center Drive West, Santa Ana, CA 92701': >-
+          Orange Superior Court, Central Justice Center, 700 Civic Center Drive
+          West, Santa Ana, CA 92701
+      - 'Orange Superior Court, Community Court, 909 N. Main Street, Santa Ana, CA 92701': >-
+          Orange Superior Court, Community Court, 909 N. Main Street, Santa Ana,
+          CA 92701
+      - 'Orange Superior Court, Department CJ1 Orange County Men''s Jail, Building 50, 550 N. Flower St., Santa Ana, CA 92703': >-
+          Orange Superior Court, Department CJ1 Orange County Men's Jail,
+          Building 50, 550 N. Flower St., Santa Ana, CA 92703
+      - 'Orange Superior Court, Harbor Justice Center - Newport Beach, 4601 Jamboree Road, Newport Beach, CA 92660-2595': >-
+          Orange Superior Court, Harbor Justice Center - Newport Beach, 4601
+          Jamboree Road, Newport Beach, CA 92660-2595
+      - 'Orange Superior Court, North Justice Center, 1275 North Berkeley Avenue, Fullerton, CA 92832-1258': >-
+          Orange Superior Court, North Justice Center, 1275 North Berkeley
+          Avenue, Fullerton, CA 92832-1258
+      - 'Orange Superior Court, West Justice Center, 8141 13th Street, Westminster, CA 92683-4593': >-
+          Orange Superior Court, West Justice Center, 8141 13th Street,
+          Westminster, CA 92683-4593
+      - 'Placer Superior Court, Hon. Howard G. Gibson Courthouse Bill Santucci Justice Center, Departments 30 - 44,10820 Justice Center Drive, Roseville, CA 95678': >-
+          Placer Superior Court, Hon. Howard G. Gibson Courthouse Bill Santucci
+          Justice Center, Departments 30 - 44,10820 Justice Center Drive,
+          Roseville, CA 95678
+      - 'Plumas Superior Court, Plumas Superior Court, 520 Main Street   Room 104, Quincy, CA  95971': >-
+          Plumas Superior Court, Plumas Superior Court, 520 Main Street   Room
+          104, Quincy, CA  95971
+      - 'Riverside Superior Court, Riverside Historic Courthouse, 4050 Main Street, Riverside, CA 92501': >-
+          Riverside Superior Court, Riverside Historic Courthouse, 4050 Main
+          Street, Riverside, CA 92501
+      - 'Riverside Superior Court, Banning Justice Center, 311 E. Ramsey Street, Banning, CA 92220': >-
+          Riverside Superior Court, Banning Justice Center, 311 E. Ramsey
+          Street, Banning, CA 92220
+      - 'Riverside Superior Court, Blythe Courthouse, 265 N. Broadway, Blythe, CA 92225': >-
+          Riverside Superior Court, Blythe Courthouse, 265 N. Broadway, Blythe,
+          CA 92225
+      - 'Riverside Superior Court, Indio Larson Justice Center. 46-200 Oasis Street, Indio, CA 92201': >-
+          Riverside Superior Court, Indio Larson Justice Center. 46-200 Oasis
+          Street, Indio, CA 92201
+      - 'Riverside Superior Court, Southwest Justice center, 30755-D Auld Road, Murrieta, CA 92563': >-
+          Riverside Superior Court, Southwest Justice center, 30755-D Auld Road,
+          Murrieta, CA 92563
+      - 'Riverside Superior Court, Riverside Hall of Justice, 4100 Main Street, Riverside, CA 92501': >-
+          Riverside Superior Court, Riverside Hall of Justice, 4100 Main Street,
+          Riverside, CA 92501
+      - 'Sacramento Superior Court, Gordon D. Schaber Sacramento County Courthouse, 720 9th Street, Sacramento, CA 95814': >-
+          Sacramento Superior Court, Gordon D. Schaber Sacramento County
+          Courthouse, 720 9th Street, Sacramento, CA 95814
+      - 'San Benito Superior Court, 450 Fourth Street, Hollister, CA 95023': 'San Benito Superior Court, 450 Fourth Street, Hollister, CA 95023'
+      - 'San Bernardino Superior Court, San Bernardino District, 247 West Third Street, San Bernardino, CA 92415-0240': >-
+          San Bernardino Superior Court, San Bernardino District, 247 West Third
+          Street, San Bernardino, CA 92415-0240
+      - 'San Diego Superior Court, Central Courthouse, 1100 Union Street, San Diego, CA 92101': >-
+          San Diego Superior Court, Central Courthouse, 1100 Union Street, San
+          Diego, CA 92101
+      - 'San Diego Superior Court, East County Regional Center, 250 East Main Street, El Cajon, California 92020': >-
+          San Diego Superior Court, East County Regional Center, 250 East Main
+          Street, El Cajon, California 92020
+      - 'San Diego Superior Court, North County Regional Center, 325 South Melrose, Vista, California 92081': >-
+          San Diego Superior Court, North County Regional Center, 325 South
+          Melrose, Vista, California 92081
+      - 'San Diego Superior Court, South County Regional Center, 500 3rd Avenue, Chula Vista, California 91910': >-
+          San Diego Superior Court, South County Regional Center, 500 3rd
+          Avenue, Chula Vista, California 91910
+      - 'San Francisco Superior Court, Hall of Justice, 850 Bryant St., Room 101, San Francisco, CA 94103': >-
+          San Francisco Superior Court, Hall of Justice, 850 Bryant St., Room
+          101, San Francisco, CA 94103
+      - 'San Joaquin Superior Court, County of San Joaquin, 180 E Weber Ave 2nd Floor, Stockton, CA 95202': >-
+          San Joaquin Superior Court, County of San Joaquin, 180 E Weber Ave 2nd
+          Floor, Stockton, CA 95202
+      - 'San Joaquin Superior Court, Lodi Branch (Building 1), 217 W Elm St, Lodi, California 95240': >-
+          San Joaquin Superior Court, Lodi Branch (Building 1), 217 W Elm St,
+          Lodi, California 95240
+      - 'San Joaquin Superior Court, Lodi Branch (Building 2), 315 W Elm St., Lodi, California 95240': >-
+          San Joaquin Superior Court, Lodi Branch (Building 2), 315 W Elm St.,
+          Lodi, California 95240
+      - 'San Joaquin Superior Court, Maneca Branch, 315 E Center St., Manteca, California 95336': >-
+          San Joaquin Superior Court, Maneca Branch, 315 E Center St., Manteca,
+          California 95336
+      - 'San Luis Obispo Superior Court, 1050 Monterey Street Room 220, San Luis Obispo, CA, 93408 USA': >-
+          San Luis Obispo Superior Court, 1050 Monterey Street Room 220, San
+          Luis Obispo, CA, 93408 USA
+      - 'San Mateo Superior Court, 400 County Center, 4th Floor, Redwood City, CA 94063': >-
+          San Mateo Superior Court, 400 County Center, 4th Floor, Redwood City,
+          CA 94063
+      - 'Santa Barbara Superior Court, Santa Barbara Superior Court, 118 E. Figueroa Street, Santa Barbara, CA 93101': >-
+          Santa Barbara Superior Court, Santa Barbara Superior Court, 118 E.
+          Figueroa Street, Santa Barbara, CA 93101
+      - 'Santa Barbara Superior Court, Lompoc Division, 115 Civic Center Plaza, Lompoc, CA 93436-6967': >-
+          Santa Barbara Superior Court, Lompoc Division, 115 Civic Center Plaza,
+          Lompoc, CA 93436-6967
+      - 'Santa Barbara Superior Court, Santa Maria Division, 312-M East Cook Street, Santa Maria, CA 93456-5165': >-
+          Santa Barbara Superior Court, Santa Maria Division, 312-M East Cook
+          Street, Santa Maria, CA 93456-5165
+      - 'Santa Barbara Superior Court, Solvang Division, 1745 Mission Drive, Suite C, Solvang, CA 93463-3605': >-
+          Santa Barbara Superior Court, Solvang Division, 1745 Mission Drive,
+          Suite C, Solvang, CA 93463-3605
+      - 'Santa Clara Superior Court, Hall of Justice, 190-200 West Hedding Street, San Jose, CA 95110': >-
+          Santa Clara Superior Court, Hall of Justice, 190-200 West Hedding
+          Street, San Jose, CA 95110
+      - 'Santa Clara Superior Court, Palo Alto Courthouse, 270 Grant Avenue, Palo Alto, CA 94306': >-
+          Santa Clara Superior Court, Palo Alto Courthouse, 270 Grant Avenue,
+          Palo Alto, CA 94306
+      - 'Santa Clara Superior Court, South County Morgan Hill Courthouse, 301 Diana Avenue, Morgan Hill, CA 95037': >-
+          Santa Clara Superior Court, South County Morgan Hill Courthouse, 301
+          Diana Avenue, Morgan Hill, CA 95037
+      - 'Santa Cruz Superior Court, Superior Court of California,County of Santa Cruz, 701 Ocean Street, Room 120, Santa Cruz, CA 95060': >-
+          Santa Cruz Superior Court, Superior Court of California,County of
+          Santa Cruz, 701 Ocean Street, Room 120, Santa Cruz, CA 95060
+      - 'Shasta Superior Court, 1500 Court Street, Room 219, Redding CA 96001': 'Shasta Superior Court, 1500 Court Street, Room 219, Redding CA 96001'
+      - 'Sierra Superior Court, 100 Courthouse Square, Downieville, CA 95936 ': 'Sierra Superior Court, 100 Courthouse Square, Downieville, CA 95936 '
+      - "Siskiyou Superior Court,\t311 4th Street, Yreka, CA 96097": "Siskiyou Superior Court,\t311 4th Street, Yreka, CA 96097"
+      - 'Solano Superior Court, Fairfield Branch, Law and Justice Building, 600 Union Ave., Ste. 151, Fairfield, CA 94533': >-
+          Solano Superior Court, Fairfield Branch, Law and Justice Building, 600
+          Union Ave., Ste. 151, Fairfield, CA 94533
+      - 'Solano Superior Court, Vallejo Branch, Solano Justice Building, 321 Tuolumne Street, Vallejo, CA 94590': >-
+          Solano Superior Court, Vallejo Branch, Solano Justice Building, 321
+          Tuolumne Street, Vallejo, CA 94590
+      - 'Sonoma Superior Court, Hall of Justice, 600 Administration Drive, Room 105J, Santa Rosa CA 95403': >-
+          Sonoma Superior Court, Hall of Justice, 600 Administration Drive, Room
+          105J, Santa Rosa CA 95403
+      - 'Stanislaus Superior Court, 800 11th Street, Room 140, P.O. Box 1098, Modesto, CA 95353': >-
+          Stanislaus Superior Court, 800 11th Street, Room 140, P.O. Box 1098,
+          Modesto, CA 95353
+      - 'Sutter Superior Court, Sutter County Superior Courthouse, 1175 Civic Center Blvd, Yuba City, CA 95993': >-
+          Sutter Superior Court, Sutter County Superior Courthouse, 1175 Civic
+          Center Blvd, Yuba City, CA 95993
+      - 'Tehama Superior Court, 1740 Walnut Street, Red Bluff, CA  96080': 'Tehama Superior Court, 1740 Walnut Street, Red Bluff, CA  96080'
+      - 'Trinity Superior Court, Weaverville Court House, 11 Court Street, Weaverville, CA 96093': >-
+          Trinity Superior Court, Weaverville Court House, 11 Court Street,
+          Weaverville, CA 96093
+      - 'Tulare  Superior Court, Tulare County Superior Court, Criminal Division, 221 South Mooney Blvd, Room 124, Visalia CA 93291': >-
+          Tulare  Superior Court, Tulare County Superior Court, Criminal
+          Division, 221 South Mooney Blvd, Room 124, Visalia CA 93291
+      - 'Tuolumne Superior Court, 60 N. Washington Street, Sonora, CA 95370': 'Tuolumne Superior Court, 60 N. Washington Street, Sonora, CA 95370'
+      - 'Ventura Superior Court, Government Center, Hall of Justice, Room 118, 800 South Victoria Ave., Ventura CA 93009"': >-
+          Ventura Superior Court, Government Center, Hall of Justice, Room 118,
+          800 South Victoria Ave., Ventura CA 93009'
+      - 'Ventura Superior Court, East County Courthouse, South Side, 3855-F Alamo Street, Simi Valley, CA 93063': >-
+          Ventura Superior Court, East County Courthouse, South Side, 3855-F
+          Alamo Street, Simi Valley, CA 93063
+      - 'Ventura Superior Court, Juvenile Courthouse – Room 122, 4353 E. Vineyard Ave., Oxnard, CA 93036': >-
+          Ventura Superior Court, Juvenile Courthouse – Room 122, 4353 E.
+          Vineyard Ave., Oxnard, CA 93036
+      - 'Yolo Superior Court, 1000 Main Street, Woodland, CA 95695': 'Yolo Superior Court, 1000 Main Street, Woodland, CA 95695'
+      - 'Yuba Superior Court, Yuba County Superior Court, 215 Fifth Street, Suite 200, Marysville, CA 95901': >-
+          Yuba Superior Court, Yuba County Superior Court, 215 Fifth Street,
+          Suite 200, Marysville, CA 95901
+    datatype: dropdown
+    Filing Court: filingcourtname
+question: What court were you convicted in?
+---
+need: filingcourtname
+continue button label: Save & Continue
+fields:
+  - choices:
+      - 'Alameda: 1225 Fallon Street, Room 900, Oakland, CA 94612': 'Alameda: 1225 Fallon Street, Room 900, Oakland, CA 94612'
+      - 'Alpine, P.O. Box 248, Markleeville, CA 96120': 'Alpine: P.O. Box 248, Markleeville, CA 96120'
+      - 'Amador, 708 Court Street, #202, Jackson, CA 95642': 'Amador: 708 Court Street, No. 202, Jackson, CA 95642'
+      - 'Butte, 25 County Center Drive — Administration Building, Oroville, CA 95965': 'Butte: 25 County Center Drive, Administration Building, Oroville, CA 95965'
+      - 'Calaveras, 891 Mountain Ranch Road, San Andreas, CA 95249': 'Calaveras, 891 Mountain Ranch Road, San Andreas, CA 95249'
+      - 'Colusa, 346 5th Street, Suite 101, Colusa, CA 95932': 'Colusa, 346 5th Street, Suite 101, Colusa, CA 95932'
+      - 'Contra Costa, 900 Ward Street, Martinez, CA 94553': 'Contra Costa: 900 Ward Street, Martinez, CA 94553'
+      - 'Del Norte, 450 H Street, Room 171, Crescent City, CA 95531': 'Del Norte, 450 H Street, Room 171, Crescent City, CA 95531'
+      - 'El Dorado, 515 Main Street, Placerville, CA 95667': 'El Dorado, 515 Main Street, Placerville, CA 95667'
+      - 'Fresno, 2220 Tulare Street, Suite 1000, Fresno, CA 93721': 'Fresno, 2220 Tulare Street, Suite 1000, Fresno, CA 93721'
+      - 'Glenn, P.O. Box 430, Willows, CA 95988': Glenn__P_O__Box_430__Willows__CA_95988
+      - 'Humboldt, 825 5th Street, Eureka, CA 95501': Humboldt__825_5th_Street__Eureka__CA_95501
+      - 'Imperial, 940 West Main Street, Suite 102, El Centro, CA 92243': Imperial__940_West_Main_Street__Suite_102__El_Centro__CA_92243
+      - 'Inyo, 168 North Edwards, Independence, CA 93526': Inyo__168_North_Edwards__Independence__CA_93526
+      - 'Kern, 1215 Truxtun Avenue, Bakersfield, CA 93301': Kern__1215_Truxtun_Avenue__Bakersfield__CA_93301
+      - 'Kings, 1400 West Lacey Blvd., Hanford, CA 93230': Kings__1400_West_Lacey_Blvd___Hanford__CA_93230
+      - 'Lake, 255 N. Forbes Street, Lakeport, CA 95453': Lake__255_N__Forbes_Street__Lakeport__CA_95453
+      - 'Lassen, 2950 Riverside Drive, Suite 102, Susanville, CA 96130': Lassen__2950_Riverside_Drive__Suite_102__Susanville__CA_96130
+      - 'Los Angeles, 211 W. Temple Street, Suite 1200, Los Angeles, CA 90012': 'Los Angeles, 211 W. Temple_Street, Suite 1200, Los Angeles, CA 90012'
+      - 'Madera, 209 West Yosemite Avenue, Madera, CA 93637': Madera__209_West_Yosemite_Avenue__Madera__CA_93637
+      - 'Marin, 3501 Civic Center Drive, Room 130, San Rafael, CA 94903': 'Marin, 3501 Civic Center Drive, Room 130, San Rafael, CA 94903'
+      - 'Mariposa, P.O. Box 730, Mariposa, CA 95338': Mariposa__P_O__Box_730__Mariposa__CA_95338
+      - 'Mendocino, P.O. Box 1000, Ukiah, CA 95482': Mendocino__P_O__Box_1000__Ukiah__CA_95482
+      - 'Merced, 550 West Main Street, Merced, CA 95340': Merced__550_West_Main_Street__Merced__CA_95340
+      - 'Modoc, 204 S. Court Street Room 202, Alturas, CA 96101': Modoc__204_S__Court_Street_Room_202__Alturas__CA_96101
+      - 'Mono, P.O. Box 2053, Mammoth Lakes, CA 93546': Mono__P_O__Box_2053__Mammoth_Lakes__CA_93546
+      - 'Monterey, P.O. Box 1131, Salinas, CA 93902': 'Monterey: P.O. Box 1131, Salinas, CA 93902'
+      - 'Napa, P.O. Box 720. Napa, CA 94559': 'Napa: P.O. Box 720, Napa, CA 94559'
+      - 'Nevada, 201 Commercial Street, Nevada City, CA 95959': Nevada__201_Commercial_Street__Nevada_City__CA_95959
+      - 'Orange, 401 Civic Center Drive West, Santa Ana, CA 92701': 'Orange: 401 Civic Center Drive_West, Santa Ana, CA 92701'
+      - 'Placer, 10810 Justice Center Drive, Roseville, CA 95678': Placer__10810_Justice_Center_Drive__Roseville__CA_95678
+      - 'Plumas, 520 Main Street, Room 404, Quincy, CA 95971': Plumas__520_Main_Street__Room_404__Quincy__CA_95971
+      - 'Riverside, 3960 Orange Street, Riverside, CA 92501': 'Riverside, 3960 Orange Street, Riverside, CA 92501'
+      - 'Sacramento, 901 G Street, Sacramento, CA 95814': Sacramento__901_G_Street__Sacramento__CA_95814
+      - 'San Benito, 419 4th Street, Hollister, CA 95023': 'San Benito, 419 4th Street, Hollister, CA 95023'
+      - 'San Bernardino, 303 W. Third Street, San Bernardino, CA 92415': 'San Bernardino, 303 W. Third Street, San Bernardino, CA 92415'
+      - 'San Diego, 330 W. Broadway, Suite 1300, San Diego, CA 92101': 'San_Diego: 330 W. Broadway, Suite_1300, San Diego, CA 92101'
+      - 'San Francisco, 880 Bryant Street, Third Floor, San Francisco CA 94103': 'San Francisco: 880 Bryant Street, Third Floor, San Francisco, CA 94103'
+      - 'San Joaquin, P.O. Box 990, Stockton, CA 95202': 'San Joaquin: P.O. Box 990, Stockton, CA 95202'
+      - 'San Luis Obispo, Courthouse Annex, 4th Floor, San Luis Obispo, CA 93408': >-
+          'San Luis Obispo, Courthouse Annex, 4th Floor, San Luis Obispo, CA 93408'
+      - 'San Mateo, 400 County Center, 3rd Floor, Redwood City, CA 94063': 'San_Mateo: 400 County Center, 3rd_Floor, Redwood City, CA 94063'
+      - 'Santa Barbara, 1112 Santa Barbara Street, Santa Barbara, CA 93101': 'Santa_Barbara: 1112 Santa Barbara Street, Santa Barbara, CA 93101'
+      - 'Santa Clara, 70 West Hedding Street, West Wing, San Jose, CA 95110': 'Santa Clara, 70 West Hedding Street, West Wing, San Jose, CA 95110'
+      - 'Santa Cruz, 701 Ocean Street, Room 200, Santa Cruz, CA 95060': Santa_Cruz__701_Ocean_Street__Room_200__Santa_Cruz__CA_95060
+      - 'Shasta, 1355 West Street, Redding, CA 96001': Shasta__1355_West_Street__Redding__CA_96001
+      - 'Sierra, 100 Courthouse Square, Downieville, CA 95936': Sierra__100_Courthouse_Square__Downieville__CA_95936
+      - 'Siskiyou, P.O. Box 986, Yreka, CA 96097': Siskiyou__P_O__Box_986__Yreka__CA_96097
+      - 'Solano, 675 Texas Street, Suite 4500, Fairfield, CA 94533': Solano__675_Texas_Street__Suite_4500__Fairfield__CA_94533
+      - 'Sonoma, 600 Administration Drive, Room 212J, Santa Rosa, CA 95403': Sonoma__600_Administration_Drive__Room_212J__Santa_Rosa__CA_95403
+      - 'Stanislaus, 832 12th Street, Suite 300, Modesto, CA 95353': Stanislaus__832_12th_Street__Suite_300__Modesto__CA_95353
+      - 'Sutter, 446 Second Street, Suite 102, Yuba City, CA 95991': Sutter__446_Second_Street__Suite_102__Yuba_City__CA_95991
+      - 'Tehama, P.O. Box 519, Red Bluff, CA 96080': Tehama__P_O__Box_519__Red_Bluff__CA_96080
+      - 'Trinity, P.O. Box 310, Weaverville, CA 96093': Trinity__P_O__Box_310__Weaverville__CA_96093
+      - 'Tulare, 221 South Mooney Blvd., Suite 224, Visalia, CA 93291': Tulare__221_South_Mooney_Blvd___Suite_224__Visalia__CA_93291
+      - 'Tuolumne, 423 No. Washington Street, Sonora, CA 95370': Tuolumne__423_No__Washington_Street__Sonora__CA_95370
+      - 'Ventura, 800 South Victoria Avenue, Ventura, CA 93009': Ventura__800_South_Victoria_Avenue__Ventura__CA_93009
+      - 'Yolo, 301 Second Street, Woodland, CA 95695': Yolo__301_Second_Street__Woodland__CA_95695
+      - 'Yuba, 215 Fifth Street, Suite 152, Marysville, CA 95901': Yuba__215_Fifth_Street__Suite_152__Marysville__CA_95901
+    datatype: dropdown
+    Address: servingpartyaddress
+question: 'Choose the District Attorney in the county you were convicted in:'
+---
+need: servingpartyaddress
+continue button label: Save & Continue
+question: >-
+  Sign here.
+subquestion: |
+  Please sign your document here.
+signature: Signature1
+---
+mandatory: true
+code: |
+   servicemethod = 'US_Mail'
+   servingparty = ' '
+---
+need: Signature1
+continue button label: Save & Continue
+fields:
+  - 'Do you want HelpSelf to file your documents with the court and serve them on the District Attorney?': wantshelpselftofile
+    datatype: yesnoradio
+  - 'You can file and serve your documents yourself, but if you want us to, we charge $15 to cover our costs.  Click **I Understand** when you have paid at [this link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XQDXA8Q88PPLS)': paidthefeesandstuff
+    choices:
+      -  I understand: I_understand
+    none of the above: false
+    datatype: checkboxes
+    show if:
+      is: True
+      variable: wantshelpselftofile
+  - How will you be serving your documents?: servicemethod
+    choices:
+      - Personal service (giving them to the District Attorney in person): Personal_service__giving_them_to_the_District_Attorney_in_person_
+      - US Mail: US_Mail
+    datatype: radio
+    required: False
+    show if:
+      is: False
+      variable: wantshelpselftofile
+  - Who will be serving the documents? (*This person must be over 18 and cannot be you*): servingparty
+    datatype: text
+    required: False
+    show if:
+      is: False
+      variable: wantshelpselftofile
+question: Filing with Court and Serving on District Attorney
+---
+attachment:
+  fields:
+    - statebarno: ''
+    - fullname: '${ fulllegalname }'
+    - attorneyfirm: ''
+    - streetaddress: '${ streetaddress }'
+    - city: '${ city }'
+    - state: '${ state }'
+    - zipcode: '${ zipcode }'
+    - telephoneno: '${ telephonenumber }'
+    - faxno: ''
+    - emailaddress: '${ emailaddress }'
+    - fullnameifattorney: ''
+    - fullname2: '${ fulllegalname }'
+    - caseno: '${ convictioncasenumber }'
+    - resentencing: '${ ''Yes'' if currentlyserving == True else ''No'' }'
+    - redesignation: '${ ''Yes'' if completedsentence == True else ''No'' }'
+    - courtonly: ''
+    - courtonly2: ''
+    - courtonly3: ''
+    - possession: >-
+        ${ 'Yes' if convictiontype['Possession_of_marijuana__Health_and_Safety_Code_11357_'] else 'No' }
+    - cultivation: >-
+        ${ 'Yes' if convictiontype['Cultivation_of_marijuana__11358_'] else 'No' }
+    - possessionforsale: >-
+        ${ 'Yes' if convictiontype['Possession_of_marijuana_for_sale__11359_'] else 'No' }
+    - transportation: >-
+        ${ 'Yes' if convictiontype['Transportation__Distribution__or_Importation_of_Marijuana__11360_'] else 'No' }
+    - personaluse: >-
+        ${ 'Yes' if convictiontype['Personal_use_of_marijuana__11362_1_'] else 'No' }
+    - petition: '${ ''Yes'' if currentlyserving == True else ''No'' }'
+    - application: '${ ''Yes'' if completedsentence == True else ''No'' }'
+    - waiveroriginaljudge: 'No'
+    - waiverappearance: 'No'
+    - signdate: ''
+    - Signature: '{ Signature1 }'
+    - bottom1: ''
+    - bottom2: ''
+    - bottom3: ''
+    - bottom4: ''
+  filename: CR400 Petition
+  name: CR400 Petition
+  pdf template file: CR400_Petition.pdf
+  variable name: CR400_Petition
+---
+attachment:
+  fields:
+    - statebarno: ''
+    - fullname: '${ fulllegalname }'
+    - firmnameifattorney: Self-Represented
+    - streetaddress: '${ streetaddress }'
+    - city: '${ city }'
+    - state: '${ state }'
+    - zipcode: '${ zipcode }'
+    - telephoneno: '${ telephonenumber }'
+    - faxno: ''
+    - emailaddress: '${ emailaddress }'
+    - fullname2: '${ fulllegalname }'
+    - fullname3: '${ fulllegalname }'
+    - caseno: '${ convictioncasenumber }'
+    - blankform5: ''
+    - blankform6: ''
+    - personalservice: >-
+        ${ 'Yes' if servicemethod == 'Personal_service__giving_them_to_the_District_Attorney_in_person_' else 'No' }
+    - mailservice: '${ ''Yes'' if servicemethod == ''US_Mail'' else ''No'' }'
+    - blankform7: ''
+    - servingparty: '${ servingparty }'
+    - servingpartyaddress: '${ servingpartyaddress }'
+    - servingpartytelephone: '${ telephonenumber }'
+    - daservedpartyname: District Attorney's Office
+    - daservedpartyaddress: '${ servingpartyaddress }'
+    - dateserved: ''
+    - timeserved: ''
+    - timeservedam: ''
+    - timeservedpm: ''
+    - personalservice2: >-
+        ${ 'Yes' if servicemethod == 'Personal_service__giving_them_to_the_District_Attorney_in_person_' else 'No' }
+    - mailservice2: '${ ''Yes'' if servicemethod == ''US_Mail'' else ''No'' }'
+    - depositedinmail: '${ ''Yes'' if servicemethod == ''US_Mail'' and wantshelpselftofile == False else ''No'' }'
+    - placedenvelopeforcollectionandmailing: '${ ''Yes'' if wantshelpselftofile == True else ''No'' }'
+    - countywhereservedfrom: '${ city }'
+    - dateserved2: ''
+    - servingparty2: '${ servingparty }'
+    - blankform1: ''
+    - blankform2: ''
+    - blankform3: ''
+    - blankform4: ''
+  filename: CR401 Proof of Service
+  name: CR401 Proof of Service
+  pdf template file: CR401_Proof_of_Service.pdf
+  variable name: CR401_Proof_of_Service
+---
+code: |
+  #hslPreAttachment
+---
+attachment code: '[CR400_Petition,CR401_Proof_of_Service]'
+mandatory: True
+question: |
+
+  ##Here are your documents!  
+
+  ### If you did not choose to have HelpSelf file for you, please file these documents (by mail or in person) with the court in the county where you were convicted, and serve a copy on the District Attorney (address is in the "Proof of Service" document below).
